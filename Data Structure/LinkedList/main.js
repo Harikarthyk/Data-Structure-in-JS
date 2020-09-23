@@ -10,3 +10,4 @@ myList.add(31);
 myList.delete(13);
 myList.insert(0, 122);
 myList.display();
+console.log(myList.size);

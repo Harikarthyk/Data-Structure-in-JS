@@ -83,6 +83,7 @@ class LinkedList {
 	insert(index = this.size, data = 0) {
 		if (index > this.size) index = this.size;
 		index--;
+		this.size++;
 		if (index == -1) {
 			let newNode = new Node(data);
 			newNode.next = this.head;
@@ -109,5 +110,15 @@ class LinkedList {
 		console.log(result);
 	}
 }
+
+//Functions :
+/**
+ * Description :
+ *         => add(data) -> parameter : data and return size of the list
+ *         => delete(data) -> parameter : data to deleted return size of the list
+ *         => insert(pos,data) -> parameter : position ( 0 , list size ) return size of the list
+ *         => size -> return the size of the list
+ *         => display -> parameter : no parameters and return the entire result
+ */
 
 module.exports = LinkedList;
